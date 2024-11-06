@@ -1,0 +1,85 @@
+/* إعدادات CSS للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #ff9800;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.price-before, .price-after {
+    margin: 5px 0;
+}
+
+.price-before span {
+    text-decoration: line-through;
+    color: red;
+}
+
+.price-after span {
+    font-weight: bold;
+    color: green;
+}
+
+/* إعدادات لصورة الخريطة */
+#mapImageContainer {
+    display: none;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#mapImage {
+    width: 100%;
+    max-width: 600px;
+}
+
+#backButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}

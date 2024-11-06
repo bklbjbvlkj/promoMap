@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجات وعروض</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>عروض المنتجات</h1>
+    </header>
+    <main>
+        <div class="product-grid" id="productsContainer">
+            <!-- منتج 1 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/116UtS7.jpeg" alt="Harpic Active Toilet Bowl">
+                <h2>Harpic Active Toilet Bowl</h2>
+                <p class="price-before">قبل الخصم: <span>ج172</span></p>
+                <p class="price-after">بعد الخصم: <span>ج86</span></p>
+            </div>
+            <!-- منتج 2 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/DxehDu9.jpeg" alt="Pringles Hot">
+                <h2>Pringles Hot</h2>
+                <p class="price-before">قبل الخصم: <span>ج120</span></p>
+                <p class="price-after">بعد الخصم: <span>ج60</span></p>
+            </div>
+            <!-- منتج 3 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/d361N5B.jpeg" alt="Tumrina Date Spread">
+                <h2>Tumrina Date Spread</h2>
+                <p class="price-before">قبل الخصم: <span>ج90</span></p>
+                <p class="price-after">بعد الخصم: <span>ج40</span></p>
+            </div>
+            <!-- منتج 4 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/HKyXT3A.jpeg" alt="Haribo Happy Cherries">
+                <h2>Haribo Happy Cherries</h2>
+                <p class="price-before">قبل الخصم: <span>ج70</span></p>
+                <p class="price-after">بعد الخصم: <span>ج30</span></p>
+            </div>
+            <!-- منتج 5 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/KSIXY23.jpeg" alt="Al Ameed Coffee Turkish">
+                <h2>Bisk Light Whole</h2>
+                <p class="price-before">قبل الخصم: <span>50ج</span></p>
+                <p class="price-after">بعد الخصم: <span>30ج</span></p>
+            </div>
+            <!-- منتج 6 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/Vaf81M0.jpeg" alt="Almarai Cocktail Beef">
+                <h2>Almarai Cocktail Beef</h2>
+                <p class="price-before">قبل الخصم: <span>ج177</span></p>
+                <p class="price-after">بعد الخصم: <span>ج100</span></p>
+            </div>
+            <!-- منتج 7 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/1x9nMnX.jpeg" alt="Viona Soft Cotton">
+                <h2>Viona Soft Cotton</h2>
+                <p class="price-before">قبل الخصم: <span>ج37</span></p>
+                <p class="price-after">بعد الخصم: <span>ج21</span></p>
+            </div>
+            <!-- منتج 8 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/6EWg7w1.jpeg" alt="Twix Twin Chocolate">
+                <h2>Twix Twin Chocolate</h2>
+                <p class="price-before">قبل الخصم: <span>ج27.5</span></p>
+                <p class="price-after">بعد الخصم: <span>ج15</span></p>
+            </div>
+            <!-- منتج 9 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/JLOzD8W.jpeg" alt="White Facial Tissues 3ply">
+                <h2>White Facial Tissues 3ply</h2>
+                <p class="price-before">قبل الخصم: <span>ج132</span></p>
+                <p class="price-after">بعد الخصم: <span>ج72</span></p>
+            </div>
+            <!-- منتج 10 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/sVGwOG7.jpeg" alt="Nutella Ferrero Hazelnut">
+                <h2>Nutella Ferrero Hazelnut</h2>
+                <p class="price-before">قبل الخصم: <span>ج50</span></p>
+                <p class="price-after">بعد الخصم: <span>ج30</span></p>
+            </div>
+            <!-- منتج 11 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/BRHoukm.jpeg" alt="Kellogg's Original Corn Flakes">
+                <h2>Kellogg's Original Corn Flakes</h2>
+                <p class="price-before">قبل الخصم: <span>ج214</span></p>
+                <p class="price-after">بعد الخصم: <span>ج110</span></p>
+            </div>
+            <!-- منتج 12 -->
+            <div class="product-card" onclick="showMap()">
+                <img src="https://i.imgur.com/4bFGs2A.jpeg" alt="ID Touch Cure Nourishing & Conditioning">
+                <h2>ID Touch Cure Nourishing & Conditioning</h2>
+                <p class="price-before">قبل الخصم: <span>ج115</span></p>
+                <p class="price-after">بعد الخصم: <span>ج75</span></p>
+            </div>
+        </div>
+
+        <!-- صورة الخريطة -->
+        <div id="mapImageContainer">
+            <button id="backButton" onclick="hideMap()">رجوع</button>
+            <img src="https://i.imgur.com/wKxpUTN.jpeg" alt="خريطة المتجر" id="mapImage">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
